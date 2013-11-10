@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black"
+    >
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"  android:layout_centerVertical="true" >
+    <RelativeLayout
+        android:id="@+id/jmp_imgContainer"
+        android:layout_width="65dp"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/jmp_l"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+             />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/jmp_imgContainer"
+        android:orientation="vertical" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1" >
+
+
+
+
+            
+            <TextView
+                android:id="@+id/jmp_da"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textSize="10dp"
+                android:singleLine="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textColor="@android:color/white" />
+            
+               <TextView
+                android:id="@+id/jmp_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/jmp_da"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginLeft="3dp"
+                 />
+        </RelativeLayout>
+        <TextView android:id="@+id/jmp_co" 
+            android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColor="@android:color/darker_gray"
+             android:textSize="16dp"
+             android:layout_marginLeft="3dp"
+             android:singleLine="true"
+              />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.dragon.newsreader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.dragon.newsreader.view.DropDownListView
+        android:id="@+id/news_page_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		listViewAttr:isDropDownStyle="true"/>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="@string/loading" />
+    </LinearLayout>
+
+</FrameLayout>

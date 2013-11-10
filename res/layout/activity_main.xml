@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <HorizontalScrollView
+        android:id="@+id/item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="36dip"
+        android:layout_marginRight="48dip"
+        android:background="@drawable/item_selector_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/item_selector_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/news_0"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_0"
+                android:textSize="@dimen/selector_item_text_size" />
+
+            <TextView
+                android:id="@+id/news_1"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_1"
+                android:textSize="@dimen/selector_item_text_size" />
+
+            <TextView
+                android:id="@+id/news_2"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_2"
+                android:textSize="@dimen/selector_item_text_size" />
+
+            <TextView
+                android:id="@+id/news_3"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_3"
+                android:textSize="@dimen/selector_item_text_size" />
+
+            <TextView
+                android:id="@+id/news_4"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_4"
+                android:textSize="@dimen/selector_item_text_size" />
+
+            <TextView
+                android:id="@+id/news_5"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_5"
+                android:textSize="@dimen/selector_item_text_size" />
+
+            <TextView
+                android:id="@+id/news_6"
+                android:layout_width="@dimen/item_selector_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/news_item_6"
+                android:textSize="@dimen/selector_item_text_size" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/item_add"
+        android:layout_width="48dip"
+        android:layout_height="36dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/item_selector_add_bg"
+        android:gravity="center"
+        android:text="@string/item_add"
+        android:textColor="@drawable/color_add"
+        android:textSize="@dimen/selector_item_text_size" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/item_selector" />
+
+</RelativeLayout>

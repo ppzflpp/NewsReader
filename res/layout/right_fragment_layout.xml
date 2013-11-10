@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/login1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/login_image"
+            android:text="@string/click_login"
+            android:textSize="18sp" />
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip" 
+            android:background="@drawable/divider"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/get_score"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/login1"
+        android:layout_marginTop="15dip" 
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/contact_us"
+            android:drawablePadding="10dip"
+            android:text="@string/get_score"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/current_score"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:gravity="right|center_vertical"
+            android:layout_height="wrap_content"
+            android:text="@string/current_score"
+            android:textSize="18sp"
+            android:textColor="#ff0000" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/get_score"
+        android:layout_marginTop="15dip" 
+        android:layout_marginLeft="15dip"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/contact_us"
+            android:drawablePadding="10dip"
+            android:text="@string/contact_us"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/contact_us"
+        android:layout_marginTop="10dip" 
+        android:layout_marginLeft="15dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/about"
+            android:drawablePadding="10dip"
+            android:text="@string/about"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/about"
+        android:layout_marginTop="10dip" 
+        android:layout_marginLeft="15dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/scan"
+            android:drawablePadding="10dip"
+            android:text="@string/scan"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -113,8 +113,8 @@ public class MainActivity extends SlidingFragmentActivity implements
 		super.onCreate(savedInstanceState);
 		try {  
 			// youmi
-			AdManager.getInstance(this).init("8a1831b5bbd658b6",
-					"c568726734660a37", false); 
+			AdManager.getInstance(this).init("XXXXX",
+					"XXXXX", false); 
 			// SpotManager.getInstance(this).loadSpotAds();
 			// SpotManager.getInstance(this).showSpotAds(this);
 			OffersManager.getInstance(this).onAppLaunch();

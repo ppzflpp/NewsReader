@@ -21,7 +21,7 @@ public class SimpleMainSender {
 	// 发件人用户名、密码
 	private String SEND_USER = "499360256@qq.com";
 	private String SEND_UNAME = "499360256";
-	private String SEND_PWD = "365zfl592++--";
+	private String SEND_PWD = "XXXXXXXXX";
 	//收件人
 	private static String RECEIVER_USER = "499360256@qq.com";
 	// 建立会话
